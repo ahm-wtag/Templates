@@ -4,7 +4,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-<!--  Contents 
+<!--  Contents
 
   1. project config
   2. project properties
@@ -19,19 +19,21 @@
      -jsp and jstl
      -log4j
      -postgresql
+     -new dependency
   4. build
   5. plugins
      -maven default plugins
      -tomcat plugin
      -liquibase plugin
-  
+     -new plugin
+
 -->
-  
-  
-  
-  
-  
-  
+
+
+
+
+
+
 <!--  project config -->
   <groupId>org.example</groupId>
   <artifactId>Hibernate</artifactId>
@@ -42,8 +44,8 @@
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
-  
-  
+
+
 <!--  project properties -->
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -52,13 +54,13 @@
     <spring.version>5.3.8</spring.version>
     <slf4j.version>1.7.25</slf4j.version>
   </properties>
-  
-  
-  
+
+
+
 <!--  dependencies-->
 
   <dependencies>
-    
+
 <!--  Junit -->
     <dependency>
       <groupId>junit</groupId>
@@ -80,15 +82,15 @@
       <artifactId>spring-webmvc</artifactId>
       <version>${spring.version}</version>
     </dependency>
-    
+
 <!-- spring orm -->
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-orm</artifactId>
       <version>${spring.version}</version>
     </dependency>
-    
-    
+
+
 <!-- spring data jpa -->
     <dependency>
       <groupId>org.springframework.data</groupId>
@@ -110,7 +112,7 @@
       <version>4.0.1</version>
       <scope>provided</scope>
     </dependency>
-    
+
 <!-- jsp and jstl-->
     <dependency>
       <groupId>javax.servlet.jsp</groupId>
@@ -137,13 +139,17 @@
       <artifactId>postgresql</artifactId>
       <version>42.2.18</version>
     </dependency>
-    
+
+<!--  new dependency -->
+
+
+
   </dependencies>
 <!-- build -->
   <build>
     <finalName>Hibernate</finalName>
 
-    
+
 <!--    plugins-->
     <plugins>
 <!--      maven default plugins -->
@@ -204,8 +210,16 @@
         </dependencies>
       </plugin>
 
+
+
+<!--  new plugin -->
+
+
+
+
+
     </plugins>
   </build>
-  
-  
+
+
 </project>
