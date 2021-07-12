@@ -52,7 +52,6 @@
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
     <spring.version>5.3.8</spring.version>
-    <slf4j.version>1.7.25</slf4j.version>
   </properties>
 
 
